@@ -1,0 +1,11 @@
+cp1 takes two directories as arguments, so after comiling it using 'cc -o cp1 cp1.c' 
+use './cp1 srcDir/ tgtDir/' to test it. Only the srcDir/ needs to exist, as the code
+will create a new directory as a target if one does not exist. Both need to be specified.
+srcDir/ included in submittion with a test text file inside
+
+who1 will work without arguments, giving the details from the utmp file
+compiled 'cc -o who1 who1.c' and runs with './who1'
+
+who4 will either take an argument and use the wtmp file (if argument is /var/log/wtmp)
+or will take no argument and behave just like who1
+compile: 'cc -o who4 who4.c' run: './who4 /var/log/wtmp' or './who4' 
